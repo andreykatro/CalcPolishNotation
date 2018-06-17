@@ -1,5 +1,5 @@
 # CalcPolishNotation
-Implement the REST endpoint using .NET WebApi.
+Introduction of REST & Web API.
 
 ### How postfix works
 The provided expression is basically a set of operands and operators in postfix notation. The
