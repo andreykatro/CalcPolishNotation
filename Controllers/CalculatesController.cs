@@ -4,11 +4,13 @@ using Microsoft.AspNetCore.Mvc;
 using CalcPolishNotation.Models;
 using CalcPolishNotation.Interfaces;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Cors;
 
 namespace CalcPolishNotation.Controllers
 {
   [Route("[controller]")]
   [ApiController]
+  [EnableCors("MyPolicy")]
   public class CalculatesController : ControllerBase
   {
     private readonly IPostfixNotationExpressionRepository _pneRepository;
